@@ -1,0 +1,77 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-smooth: antialiased;
+}
+
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #000;
+    color: #FFF;
+}
+
+header {
+    padding: 1rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-top: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 0;
+    column-gap: 1.5rem;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    text-wrap: pretty;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+footer p {
+    color: #666;
+}
+
+/* Media Queries para Responsividade */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
